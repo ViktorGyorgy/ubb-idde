@@ -1,0 +1,17 @@
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId = 'edu.bbte.idde.gvim2021'
+            artifactId = 'backend-gvim2021'
+            version = '1.0.0-SNAPSHOT'
+
+            from components.java
+        }
+    }
+}
+
+dependencies {
+    runtimeOnly group: 'com.h2database', name: 'h2', version: '1.4.200'
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.10.0'
+    implementation group: 'com.zaxxer', name: 'HikariCP', version: '3.4.1'
+}

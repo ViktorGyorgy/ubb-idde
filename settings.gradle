@@ -1,0 +1,5 @@
+rootProject.name = 'lab-gvim2021'
+include 'gvim2021-backend'
+include 'gvim2021-desktop'
+include 'gvim2021-web'
+include 'gvim2021-spring'

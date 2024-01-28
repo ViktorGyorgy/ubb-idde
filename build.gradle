@@ -1,0 +1,23 @@
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'maven-publish'
+
+
+    group 'edu.bbte.idde.gvim2021'
+    version '1.0-SNAPSHOT'
+
+    repositories {
+        mavenCentral()
+    }
+
+    apply from: "$rootDir/lint.gradle"
+
+    dependencies {
+        // https://mvnrepository.com/artifact/org.slf4j/slf4j-api
+        implementation group: 'org.slf4j', name: 'slf4j-api', version: '2.0.3'
+        // https://mvnrepository.com/artifact/ch.qos.logback/logback-classic
+        implementation group: 'org.projectlombok', name: 'lombok', version: '1.18.22'
+        annotationProcessor group: 'org.projectlombok', name: 'lombok', version: '1.18.22'
+    }
+
+}

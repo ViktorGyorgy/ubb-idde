@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Apartment ads</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <nav>
+        <form action="/gvim2021-web/logout">
+            <button>Log out</button>
+        </form>
+    </nav>
+
+    <main>
+        {{#this}}
+        <div>
+            <p>Price: {{price}}</p>
+            <p>Number of rooms: {{numberOfRooms}}</p>
+            <p>Number of bathrooms: {{numberOfBathrooms}}</p>
+            <p>Location: {{location}}</p>
+            <p>Description: {{description}}</p>
+
+        </div>
+        {{/this}}
+    </main>
+</body>

@@ -1,0 +1,22 @@
+dependencies {
+    implementation project(':gvim2021-backend')
+}
+
+apply plugin: 'application'
+
+application {
+    mainClass.set('edu.bbte.idde.gvim2021.apartmentad.desktop.Main')
+    applicationDefaultJvmArgs = ['-Dprofile=prod']
+}
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId = 'edu.bbte.idde.gvim2021'
+            artifactId = 'frontend-gvim2021'
+            version = '1.0.0-SNAPSHOT'
+
+            from components.java
+        }
+    }
+}

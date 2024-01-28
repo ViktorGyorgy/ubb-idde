@@ -1,0 +1,13 @@
+{
+  "jdbc": {
+    "driverClass": "com.mysql.cj.jdbc.Driver",
+    "url": "jdbc:mysql://localhost:3306/idde",
+    "username": "me",
+    "password": "my_password",
+  },
+  "connectionPool": {
+    "poolSize": 10
+  }
+}
+
+
