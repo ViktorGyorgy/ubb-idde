@@ -1,12 +1,12 @@
 # About the project
 - A REST API for apartment ads
 - Modularized with Gradle
-- It has two parts, one using TomCat, and using the Spring ecosystem
+- It has two parts, one using Tomcat, and using the Spring ecosystem
 
-# Project part with TomCat
+# Project part with Tomcat
 - Created Gradle script to build .war file and deploy it into the TomCat folder
 - Used Pooling design pattern to manage Database connections
-- Used Factory design pattern to create an array based DAO for prod profile, and a database DAO for prod profile
+- Implemented Factory design pattern to create an array based DAO for prod profile, and a database DAO for prod profile
 - Session based authentication + authentication filter
 - Simple Handlebars server side rendering
 
