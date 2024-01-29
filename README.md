@@ -12,7 +12,7 @@
 
 # Project part with Spring
 - Has two profiles: one using DAO created with JDBC and Reflection API, one using DAO created with Hibernate
-- Used Reflection API to create the same needed CRUD functions for more domain models, following the DRY principles
+- Used Reflection API to create the same needed CRUD functions for different domain models, following the DRY principles
 - Different Gradle config files for different profiles
 - Used DTOs with ORM to preserve the compatibility of the API, if the domain models change
 - Implemented exception controllers
