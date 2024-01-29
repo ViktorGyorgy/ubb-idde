@@ -4,7 +4,7 @@
 - It has two parts, one using Tomcat, and using the Spring ecosystem
 
 # Project part with Tomcat
-- Created Gradle script to build .war file and deploy it into the TomCat folder
+- Created Gradle script to build .war file and deploy it into the CATALINA_HOME folder
 - Used Pooling design pattern to manage Database connections
 - Implemented Factory design pattern to create an array based DAO for prod profile, and a database DAO for prod profile
 - Session based authentication + authentication filter
